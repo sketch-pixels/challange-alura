@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Alura Challenge | Encriptador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="sketch-pixels">
+</head>
+
+<body>
+    <main class="main">
+
+        <section class="logo">
+            <h1 class="h1"><img class="img" src="img/logoalura.svg" alt="AluraLogo"></h1>
+        </section>
+
+        <section class="form">
+            <textarea class="textarea" name="mensaje" id="areaTextoIngreso" placeholder="Ingrese el texto aqui..."></textarea>
+                <div class="small">
+                    <small>⚠ Solo letras minúsculas y sin acentos</small>
+                </div>
+                <div class="buttons">
+                    <button class="button button-primary" id="encriptar">ENCRIPTAR</button>
+                    <button class="button button-secondary" id="desencriptar">DESENCRIPTAR</button>
+                </div>
+        </section>
+        
+        <section class="saleTexto">
+            <div class="derecha" id="muneco">
+                <img src="img/muneco.svg" alt="Muñeco buscando mensaje">
+                <div id="textoNoEncontrado">
+                    <h2>Ningún mensaje fue encontrado.</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>                   
+                </div>   
+            </div>
+            <div class="derecha" id="textoEncontrado">
+                <textarea id="textoSalida"></textarea>
+                <div class="buttons">
+                    <button class="button button-copy" id="botonCopiar">COPIAR</button>
+                </div>
+                <div id="textoCopiado"></div>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer>
+        <h3>by&nbsp<a href="https://github.com/sketch-pixels" target="_blank" alt="Portfolio">@sketch-pixels</a></h3>
+    </footer>
+    
+</body>
+<script src="script.js"></script>
+</html>

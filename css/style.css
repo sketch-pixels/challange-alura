@@ -1,0 +1,419 @@
+@import "reset.css";
+body {
+    background:#969eb1;
+    display: flex;
+    flex-direction: column;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.main {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 38.38rem;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    resize: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    max-width: 6vw;
+}
+
+.img {
+    max-width: 8rem;
+}
+
+.form {
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    resize: none;
+}
+
+.textarea {
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    background: #000205;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.3em;
+    height: 100%;
+    border: 0.15em solid #ffffff;
+    border-radius: 1rem;
+    outline: 0;
+    resize: none;
+    color: #ffffff;
+    box-sizing: border-box;
+    &::placeholder {
+        color: #b1b1b1;
+    }
+}
+
+.small {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button {
+    border-radius: 0.5em;
+    padding: 1em;
+    font-weight: 600;
+    font-family: 1.5em;
+    width: 100%;
+    cursor: pointer;
+    font-family: "Pixelify Sans", sans-serif;
+
+}
+
+.button-primary {
+    background: #cee54a00;
+    margin-right : 1rem;
+    border: solid 2.5px#000000; 
+    color: #ffffff;
+    font-family: "Pixelify Sans", sans-serif;
+    &:hover {
+        transition: 250ms, border 250ms;
+        background: #000000;  
+        color: #585858;
+    }
+}
+    
+.button-secondary {
+    background: #cee54a00;
+    margin-left: 1rem;
+    border: solid 2.5px#000000; 
+    color: #ffffff;
+    font-family: "Pixelify Sans", sans-serif;
+    &:hover {
+        transition: 250ms, border 250ms;
+        background: #000000;  
+        color: #585858;
+    }
+}
+
+.button-copy {
+    background: #cee54a00;
+    border: solid 2.5px#252525; 
+    color: #252525;
+    &:hover {
+        transition: 250ms, border 250ms;
+        background: #252525;  
+        color: #ffffff;
+    }
+}
+
+.saleTexto {
+    background-color: #ffffff; 
+    margin: 0rem 5rem 0rem 3rem;
+    border-radius: 1rem;
+    width: 30%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    resize: none;
+    }
+
+.derecha {
+    text-align: center;
+    max-height: 100vh;
+    margin: 1rem 1rem 1rem 1rem;
+    outline: none;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    resize: none;
+}
+
+.derecha p{
+    background-color: #ffffff; 
+    font-size: 1rem;
+    color: #16181d;
+    margin: 0 1.7rem;
+    text-align: left;
+    max-height: 100vh;
+    resize: none;
+}
+
+#muneco{
+    margin-top: 5rem;
+    position: relative;
+    z-index: 1;
+    height: 30rem; 
+}
+
+#muneco p{
+    text-align: center;
+}
+
+#textoEncontrado {    
+    z-index: 3;
+    word-wrap: break-word;
+    max-height: 100vh;
+    resize: none;
+}
+
+#textoNoEncontrado h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #16181d;
+    padding: 2rem 2rem;
+}
+
+#textoSalida {
+    background-color: #00000000; 
+    min-height: 80vh;
+    position: relative;
+    border: none;
+    outline: none;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    width: 20rem;
+}
+
+footer {
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+}
+
+a {
+    color: #000000;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        background: #000000;
+        margin-right: 1rem;
+        
+    }
+    
+    .main, .form, .textarea, .small {
+        width: 100%;
+    }
+    
+    .main {
+        min-height: auto;
+        padding: 2em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo {
+        max-width: 80%;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: center; 
+    }
+    
+    .form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .textarea {
+        min-height: 15rem;
+        padding: 0.5rem;
+        font-size: 1.25em;
+        border: 0.1em solid #ffffff;
+        border-radius: 0.5rem;
+    }
+    
+    .small {
+        margin: 1rem 0;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .button {
+        margin: 0.5rem;
+    }
+    
+    .saleTexto {
+        width: 80%;
+        min-height: 50vh;
+        margin: 1rem auto;
+    }
+    
+    .derecha {
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+    .derecha p {
+        margin: 0.5rem 0;
+    }
+    
+    #textoNoEncontrado h2 {
+        margin: 0.5rem 0;
+    }
+      
+    #muneco {
+        margin-top: 2rem;
+        padding: 1rem;
+        height: 50%;
+    }
+    
+    .textoSalida {
+        min-height: 40vh;
+    }
+    
+    footer {
+        margin-bottom: 2rem;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        background: #16181d;
+        margin-right: 1rem;
+    }
+    
+    .main, .form, .textarea, .small {
+        width: 100%;
+    }
+    
+    .main {
+        min-height: auto;
+        padding: 2em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo {
+        max-width: 80%;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: center; 
+    }
+    
+    .form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .textarea {
+        min-height: 15rem;
+        padding: 0.5rem;
+        font-size: 1.25em;
+        border: 0.1em solid #CFE54A;
+        border-radius: 0.5rem;
+    }
+    
+    .small {
+        margin: 1rem 0;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: "Pixelify Sans", sans-serif;
+
+    }
+    
+    .button {
+        margin: 0.5rem;
+        font-family: "Pixelify Sans", sans-serif;
+
+    }
+    
+    .saleTexto {
+        width: 80%;
+        min-height: 50vh;
+        margin: 1rem auto;
+    }
+    
+    .derecha {
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+    .derecha p {
+        margin: 0.5rem 0;
+    }
+    
+    #textoNoEncontrado h2 {
+        margin: 0.5rem 0;
+    }
+      
+    #muneco {
+        margin-top: 2rem;
+        padding: 1rem;
+        height: 50%;
+    }
+    
+    .textoSalida {
+        min-height: 40vh;
+    }
+    
+    footer {
+        margin-bottom: 2rem;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+}
+
+.pixelify-sans-1 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
